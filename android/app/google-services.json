@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "660115681030",
+    "firebase_url": "https://medicbangladesh-default-rtdb.firebaseio.com",
+    "project_id": "medicbangladesh",
+    "storage_bucket": "medicbangladesh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660115681030:android:f61dfdd2dc1edcd4287887",
+        "android_client_info": {
+          "package_name": "com.aniketmalik.doctor_consultation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660115681030-gb5np0t7nduhg7jcm3qe78uftpmg06ri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aniketmalik.doctor_consultation",
+            "certificate_hash": "f2bf12c01d14ac2d727cdd350f9d6b779ff353e1"
+          }
+        },
+        {
+          "client_id": "660115681030-j62binh1ar8ki617heieuh3annimi068.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aniketmalik.doctor_consultation",
+            "certificate_hash": "066dc2c54b840f3d99b20aff8c01da6964aa8b25"
+          }
+        },
+        {
+          "client_id": "660115681030-phen1kbkrv0cmah2cb7n59jj60743n81.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aniketmalik.doctor_consultation",
+            "certificate_hash": "2ba9d618cf1b55b1753d342c97ec19344eaec792"
+          }
+        },
+        {
+          "client_id": "660115681030-pk6mns3cf76n6mkkcnbal6rkqga4istn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aniketmalik.doctor_consultation",
+            "certificate_hash": "06fe717745e33e9209ed2e655492c10e55123336"
+          }
+        },
+        {
+          "client_id": "660115681030-udloag7rnjlr27keeqvd6kfgrf1jufod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9XJqM2QRfRXvLVNXNkPvleBiciRZjQCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660115681030-udloag7rnjlr27keeqvd6kfgrf1jufod.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660115681030-7st7j6vtkl0pfqcrm3nfrp075vkt539j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aniketmalik.doctorConsultation"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660115681030:android:234ff4b237f98db6287887",
+        "android_client_info": {
+          "package_name": "com.orderpin.doctor_consultation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660115681030-i1g5kbt30o09bqp1a0cqbum57bchqn1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orderpin.doctor_consultation",
+            "certificate_hash": "1cf9c7508f55cb3310785bd50735bfb35f5f818d"
+          }
+        },
+        {
+          "client_id": "660115681030-tqund586udpnqcv6kec7cfklt1s1f2lq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orderpin.doctor_consultation",
+            "certificate_hash": "a8a77658027076a5dad3c7bdde43128618b45a27"
+          }
+        },
+        {
+          "client_id": "660115681030-udloag7rnjlr27keeqvd6kfgrf1jufod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9XJqM2QRfRXvLVNXNkPvleBiciRZjQCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660115681030-udloag7rnjlr27keeqvd6kfgrf1jufod.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660115681030-7st7j6vtkl0pfqcrm3nfrp075vkt539j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aniketmalik.doctorConsultation"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
