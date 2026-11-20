@@ -11,6 +11,18 @@ I build mobile apps, web tools, and backend services. My commercial work spans m
 | **RetailDesk** | Inventory, checkout, and daily shop operations. [Open RetailDesk](https://retail-desk-pk.netlify.app/) |
 | **Vaulta** | Product site for a cross-platform download manager. [Open Vaulta](https://nomixee.github.io/vaulta/) |
 
+## AI, ML, and data science proposals
+
+Twelve project briefs with workflow illustrations, data plans, and evaluation designs for future implementation.
+
+| Area | Topics |
+| --- | --- |
+| [AI systems](docs/research/README.md#ai-systems) | Policy Q&A, visual inspection, incident triage, and multilingual voice intake |
+| [Machine learning](docs/research/README.md#machine-learning) | Delivery ETA, nearby-offer ranking, inventory forecasting, and on-device classification |
+| [Data science](docs/research/README.md#data-science) | Rollout experiments, subscription cohorts, transit accessibility, and marketplace analysis |
+
+[Browse the project briefs](docs/research/README.md) · [View the desktop and iPhone concepts](docs/research/README.md#interface-concepts)
+
 ## Runnable projects
 
 Each project has setup instructions, sample data, and verification steps.
