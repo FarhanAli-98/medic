@@ -1,0 +1,86 @@
+[
+  {
+    "id": "donation-receipts",
+    "title": "Find a donation receipt",
+    "category": "Donations",
+    "keywords": ["receipt", "download receipt", "confirmation email", "proof of donation", "tax receipt", "print receipt", "missing receipt"],
+    "passage": "Open Giving history, select the completed donation, and choose Download receipt. You can also use the link in the donation confirmation email. If the donation is still processing, check Giving history again after it clears."
+  },
+  {
+    "id": "duplicate-donations",
+    "title": "Report a duplicate donation",
+    "category": "Donations",
+    "keywords": ["duplicate", "twice", "charged twice", "double charge", "double payment", "refund duplicate"],
+    "passage": "Open Giving history to check whether both donations have completed. If both appear as completed, choose Help with this donation on the newer entry and include both donation references. Keep card numbers and security codes out of your message."
+  },
+  {
+    "id": "recurring-donations",
+    "title": "Stop a recurring donation",
+    "category": "Donations",
+    "keywords": ["recurring", "monthly", "repeat gift", "cancel donation", "pause donation", "stop donation", "subscription"],
+    "passage": "Open Giving, then Monthly gifts. Select the recurring donation and choose Stop future gifts. This stops future scheduled donations. A donation that has already been submitted stays in Giving history."
+  },
+  {
+    "id": "bank-transfer-status",
+    "title": "Check a pending bank transfer",
+    "category": "Bank transfers",
+    "keywords": ["pending transfer", "processing transfer", "transfer stuck", "taking long", "transfer delayed", "where is my transfer", "bank transfer status", "hasn't arrived"],
+    "passage": "Open Activity and select the bank transfer to check its status and estimated completion date. Pending means the transfer is still processing. If the estimated date has passed, choose Get help on that transfer and include its reference."
+  },
+  {
+    "id": "bank-transfer-cancel",
+    "title": "Cancel a scheduled transfer",
+    "category": "Bank transfers",
+    "keywords": ["cancel transfer", "stop transfer", "reverse transfer", "undo transfer", "scheduled withdrawal"],
+    "passage": "Open Activity and select the scheduled transfer. Use Cancel transfer if the option appears. Once processing begins, the self-service cancellation option is unavailable. Use Get help on the transfer to ask what options are available."
+  },
+  {
+    "id": "bank-transfer-fees",
+    "title": "Review bank transfer fees",
+    "category": "Bank transfers",
+    "keywords": ["fee", "transfer cost", "charges", "pricing", "charges for bank transfer"],
+    "passage": "Review the fee and total on the transfer confirmation screen before submitting. For a completed transfer, select it in Activity to see the fee recorded for that transfer."
+  },
+  {
+    "id": "bank-link-verification",
+    "title": "Verify a linked bank account",
+    "category": "Bank transfers",
+    "keywords": ["verify bank", "link bank", "microdeposit", "test deposit", "add bank", "connect bank", "verification amounts"],
+    "passage": "Go to Settings, then Linked banks, and select Verify on the bank account you added. Enter the two small test deposit amounts shown in your bank activity. Enter the amounts inside Harborline and keep your online banking password private."
+  },
+  {
+    "id": "request-tracking",
+    "title": "Track a support request by reference",
+    "category": "Requests",
+    "keywords": ["track request", "request status", "request reference", "case number", "support ticket", "ticket reference", "where is my request"],
+    "passage": "Open My requests to view the status of your request. Search by its reference, which starts with HR-, or open the link in your request confirmation email. If the status is Waiting on you, open the request and reply there."
+  },
+  {
+    "id": "request-update",
+    "title": "Add information to a request",
+    "category": "Requests",
+    "keywords": ["edit request", "update request", "reply ticket", "attach file", "upload attachment", "add comment", "add information"],
+    "passage": "Open the existing item in My requests and choose Add a reply. Use the attachment control for a supporting file. Remove account numbers, card details, and other sensitive information before uploading."
+  },
+  {
+    "id": "account-safety",
+    "title": "Report suspicious account activity",
+    "category": "Account safety",
+    "keywords": ["suspicious activity", "unauthorized", "unknown transaction", "fraud", "hacked", "unrecognized payment", "scam", "phishing", "suspicious login", "compromised"],
+    "passage": "Open Security and choose Report suspicious activity. If the issue is a payment, include its reference and describe what you do not recognize. Keep passwords, full card numbers, and one-time codes out of the report."
+  },
+  {
+    "id": "account-password-reset",
+    "title": "Reset an account password",
+    "category": "Account safety",
+    "keywords": ["password reset", "forgot password", "locked out", "cannot sign in", "change password", "login trouble"],
+    "passage": "On the sign-in screen, choose Forgot password and enter the email used for your Harborline account. Open the most recent reset email and follow its instructions. If you did not ask for a reset, use Security to report suspicious activity."
+  },
+  {
+    "id": "data-export",
+    "title": "Request an account data export",
+    "category": "Account safety",
+    "keywords": ["export data", "download records", "personal data copy", "privacy request", "download my data"],
+    "passage": "Open Settings, choose Privacy, and select Request data export. After confirming the request, use My requests for its status. The export link appears in the completed request after the file is prepared."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "grant-desk-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An editorial workflow and migration demo for a fictional grant directory.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}

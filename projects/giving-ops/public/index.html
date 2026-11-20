@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A synthetic recurring-giving operations dashboard.">
+    <meta name="theme-color" content="#11372d">
+    <title>Giving Ops · Recurring gifts</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/dashboard.js" type="module"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="masthead">
+        <a class="brand" href="/" aria-label="Giving Ops home"><span class="brand-mark" aria-hidden="true"></span> Giving Ops</a>
+        <div class="demo-label">Synthetic data</div>
+      </header>
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <h1 id="page-title">Recurring gifts</h1>
+            <p>Process scheduled donations, track retries, and see which gifts need attention.</p>
+          </div>
+          <aside class="controls" aria-label="Demo scheduler controls">
+            <div>
+              <p class="control-label">Simulated time</p>
+              <time id="sim-time">Loading…</time>
+            </div>
+            <div class="buttons">
+              <button class="button secondary" type="button" data-action="advance">Advance 1 day</button>
+              <button class="button primary" type="button" data-action="run">Run scheduler</button>
+            </div>
+            <span class="schedule-note">Worker checks every 30 seconds.</span>
+          </aside>
+        </section>
+        <p id="action-status" class="action-status" role="status" aria-live="polite"></p>
+        <section class="metrics" aria-label="Donation summary">
+          <article class="metric collected"><p>Total collected</p><strong id="collected">—</strong><span id="settled-count">Settled gifts</span></article>
+          <article class="metric"><p>Monthly subscriptions</p><strong id="subscriptions">—</strong><span>Scheduled automatically</span></article>
+          <article class="metric"><p>Retries scheduled</p><strong id="retries">—</strong><span>Temporary declines</span></article>
+          <article class="metric"><p>Needs attention</p><strong id="attention">—</strong><span>Requires follow-up</span></article>
+        </section>
+        <div class="main-grid">
+          <section class="panel ledger" aria-labelledby="ledger-title">
+            <div class="panel-heading"><h2 id="ledger-title">Gift ledger</h2><span class="panel-meta" id="gift-count"></span></div>
+            <div class="table-wrap" tabindex="0" aria-label="Gift ledger table">
+              <table>
+                <thead><tr><th scope="col">Donor</th><th scope="col">Scheduled</th><th scope="col">Amount</th><th scope="col">Result</th></tr></thead>
+                <tbody id="gifts"><tr><td colspan="4" class="empty">Loading gifts…</td></tr></tbody>
+              </table>
+            </div>
+          </section>
+          <section class="panel timeline" aria-labelledby="activity-title">
+            <div class="panel-heading"><h2 id="activity-title">Activity</h2></div>
+            <ol id="events" class="events"><li class="empty">Loading activity…</li></ol>
+          </section>
+        </div>
+        <section class="panel plans" aria-labelledby="plans-title">
+          <div class="panel-heading"><h2 id="plans-title">Subscriptions</h2><span class="panel-meta">Monthly recurring</span></div>
+          <div class="table-wrap" tabindex="0" aria-label="Recurring subscriptions table">
+            <table>
+              <thead><tr><th scope="col">Donor</th><th scope="col">Campaign</th><th scope="col">Monthly gift</th><th scope="col">Next charge</th></tr></thead>
+              <tbody id="plans"><tr><td colspan="4" class="empty">Loading subscriptions…</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+      <footer><span>All amounts in USD</span><button class="reset" type="button" data-action="reset">Reset demo</button></footer>
+    </div>
+  </body>
+</html>
