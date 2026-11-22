@@ -2,7 +2,7 @@
 
 I build mobile apps, web tools, and backend services. My commercial work spans more than four years and includes investment wallets, payment and banking integrations, recurring donations, delivery workflows, and app releases.
 
-[Email](mailto:farhanalidev1@gmail.com) · [LinkedIn](https://www.linkedin.com/in/farhan-ali-64a254209/)
+[Live portfolio](https://farhanali-98.github.io/medic/) · [Email](mailto:farhanalidev1@gmail.com) · [LinkedIn](https://www.linkedin.com/in/farhan-ali-64a254209/)
 
 [Mobile apps](#published-mobile-apps) · [Live projects](#live-projects) · [Runnable projects](#runnable-projects) · [Production work](#selected-production-work) · [Interface concepts](#interface-concepts) · [AI systems](#ai-systems) · [Machine learning](#machine-learning) · [Data science](#data-science)
 
