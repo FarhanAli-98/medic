@@ -87,8 +87,9 @@
     const total = matching.length;
     count.textContent = total === 1 ? '1 project' : `${total} projects`;
     empty.hidden = total > 0;
-    more.hidden = total <= limit;
-    more.textContent = `Show ${Math.min(pageSize, total - limit)} more projects`;
+    const remaining = total - visible.length;
+    more.hidden = remaining === 0;
+    if (remaining > 0) more.textContent = `Show ${Math.min(pageSize, remaining)} more projects`;
     if (expand) cards[0]?.querySelector('button').focus({ preventScroll: true });
   }
 
