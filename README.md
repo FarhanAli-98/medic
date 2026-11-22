@@ -4,7 +4,16 @@ I build mobile apps, web tools, and backend services. My commercial work spans m
 
 [Email](mailto:farhanalidev1@gmail.com) · [LinkedIn](https://www.linkedin.com/in/farhan-ali-64a254209/)
 
-[Live projects](#live-projects) · [Runnable projects](#runnable-projects) · [Production work](#selected-production-work) · [Interface concepts](#interface-concepts) · [AI systems](#ai-systems) · [Machine learning](#machine-learning) · [Data science](#data-science)
+[Mobile apps](#published-mobile-apps) · [Live projects](#live-projects) · [Runnable projects](#runnable-projects) · [Production work](#selected-production-work) · [Interface concepts](#interface-concepts) · [AI systems](#ai-systems) · [Machine learning](#machine-learning) · [Data science](#data-science)
+
+## Published mobile apps
+
+| App | Product | Store links |
+| --- | --- | --- |
+| **Sukuk Capital** | Investment and portfolio management. | [App Store](https://apps.apple.com/us/app/id1664435903) · [Google Play](https://play.google.com/store/apps/details?id=com.sukuk.live) |
+| **Entertainment · Discover More** | Dining, shopping, and travel discounts. | [App Store](https://apps.apple.com/au/app/entertainment-discover-more/id840550967) · [Google Play](https://play.google.com/store/apps/details?id=com.entertainmentbook.aus) |
+| **Quit Must** | On-device content filtering, listed as Quit Adult Content. | [Google Play](https://play.google.com/store/apps/details?id=com.geeklone.quitmust) |
+| **Bespokely** | Business discovery and customer engagement. | [Company app on Google Play](https://play.google.com/store/apps/details?id=com.bespokely.app) |
 
 ## Live projects
 
@@ -36,9 +45,10 @@ The runnable projects are portfolio implementations with fictional data. The pro
 
 ## Selected production work
 
-- **Sukuk Capital.** Led investment app architecture and development, including wallet and portfolio modules, PayFort and custodian bank integrations, and the mobile release pipeline. [iOS](https://apps.apple.com/us/app/id1664435903) · [Android](https://play.google.com/store/apps/details?id=com.sukuk.live)
+- **Sukuk Capital.** Led investment app architecture and development, including wallet and portfolio modules, PayFort and custodian bank integrations, and the mobile release pipeline.
 - **Bespokely.** Built reusable mobile components and configurable features, and integrated application APIs and payment services for a hospitality product. [Product site](https://bespokely.io/)
-- **Entertainment.** Maintained digital offers and coupon features, with testing and reliability fixes across updates. [Android](https://play.google.com/store/apps/details?id=com.entertainmentbook.aus) · [iOS](https://apps.apple.com/au/app/entertainment-play-dine-save/id840550967)
+- **Entertainment.** Maintained digital offers and coupon features, with testing and reliability fixes across updates.
+- **Quit Must.** Integrated on-device image classification into Flutter features, including displaying predictions and supporting background processing.
 - **Kynami.** Developed donation and recurring subscription flows and implemented scheduled backend processing in Node.js and TypeScript.
 
 [Read the engineering case studies](docs/case-studies.md)
