@@ -15,6 +15,15 @@ I build mobile apps, web tools, and backend services. My commercial work spans m
 | **Quit Must** | On-device content filtering, listed as Quit Adult Content. | [Google Play](https://play.google.com/store/apps/details?id=com.geeklone.quitmust) |
 | **Bespokely** | Business discovery and customer engagement. | [Company app on Google Play](https://play.google.com/store/apps/details?id=com.bespokely.app) |
 
+<p>
+<a href="mobile-apps/README.md#sukuk-capital"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ac/6d/6f/ac6d6f81-7aa8-9993-d735-159bcb97bd3c/3241dd0b-3cb3-4c54-a690-79b157d5b7b8_5_5_5.png/392x696bb.png" width="23%" alt="Sukuk Capital investment opportunities"></a>
+<a href="mobile-apps/README.md#entertainment"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/74/fb/3774fb3d-f622-ad3e-770e-7f7912aa86fb/f74aee49-841e-4f4b-9f21-0e367a712158_Frame_1.png/392x696bb.png" width="23%" alt="Entertainment offers home feed"></a>
+<a href="mobile-apps/README.md#quit-must"><img src="https://play-lh.googleusercontent.com/iAsjSc_8XerO-fgLfk6VMeKD8Ofr2mLdr1vKlf02xpXcC7MamwcDxGOLG1Tvgg2JEkiFubHHSi3LC6w9FVev=w600-h1000" width="23%" alt="Quit Must performance report"></a>
+<a href="mobile-apps/README.md#bespokely"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c7/bb/a5/c7bba5ab-b20d-ad15-5aad-e96632a1545c/Art-Hotel__U007c_Home.png/320x480bb.jpg" width="23%" alt="Art Hotel guest app home screen from Bespokely"></a>
+</p>
+
+[See all mobile app screenshots and contributions](mobile-apps/README.md)
+
 ## Live projects
 
 | Project | Explore |
