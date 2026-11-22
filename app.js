@@ -81,7 +81,12 @@
     });
     const previous = expand ? grid.children.length : 0;
     const visible = matching.slice(0, limit);
-    const cards = visible.slice(previous).map(project => makeCard(project));
+    const cards = visible.slice(previous).map((project, index) => {
+      const card = makeCard(project);
+      card.classList.add('catalog-enter');
+      card.style.setProperty('--entry-delay', `${Math.min(index, 5) * 42}ms`);
+      return card;
+    });
     if (expand) grid.append(...cards);
     else grid.replaceChildren(...cards);
     const total = matching.length;

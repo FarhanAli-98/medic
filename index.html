@@ -4,20 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Farhan Ali builds Flutter apps, web products, and the backend systems that connect them. Browse published apps, live products, demos, and engineering studies.">
-  <meta name="theme-color" content="#101216">
+  <meta name="theme-color" content="#060811">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Farhan Ali — Software Engineer">
   <meta property="og:description" content="Published apps, web products, and engineering work by Farhan Ali.">
+  <meta property="og:image" content="https://farhanali-98.github.io/medic/assets/galaxy.webp">
   <title>Farhan Ali — Software Engineer</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="starfield.js" defer></script>
   <script src="projects.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell header-inner">
@@ -27,23 +30,35 @@
         <a href="#services">Services</a>
         <a href="#about">About</a>
       </nav>
-      <a class="header-contact" href="#contact">Get in touch</a>
+      <div class="header-actions">
+        <button type="button" id="motion-toggle" class="motion-toggle" aria-pressed="false" hidden>
+          <svg class="motion-icon" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="icon-pause" d="M7 5v10m6-10v10"/><path class="icon-play" d="m7 5 8 5-8 5z"/></svg>
+          <span id="motion-label">Pause motion</span>
+        </button>
+        <a class="header-contact" href="#contact">Get in touch</a>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow hero-intro"><span></span>Independent software engineer</p>
-        <h1 id="hero-title">I build software<br> that <em>ships.</em></h1>
-        <p class="hero-summary">Mobile apps, web products, and the systems that connect them. I take a product or an individual feature from architecture through release.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore my work</a>
-          <a class="button button-quiet" href="mailto:farhanalidev1@gmail.com">Email me</a>
-        </div>
-      </div>
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-art" aria-hidden="true">
-        <img src="assets/hero.webp" alt="" width="1448" height="1086" fetchpriority="high">
+        <img src="assets/galaxy.webp" alt="" width="1586" height="992" fetchpriority="high">
+      </div>
+      <div class="orbits" aria-hidden="true">
+        <div class="orbit orbit-wide"><span></span></div>
+        <div class="orbit orbit-steep"><span></span></div>
+      </div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-intro"><span></span>Independent software engineer</p>
+          <h1 id="hero-title">I build software<br> that <em>ships.</em></h1>
+          <p class="hero-summary">Mobile apps, web products, and the systems that connect them. I take a product or an individual feature from architecture through release.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work</a>
+            <a class="button button-quiet" href="mailto:farhanalidev1@gmail.com">Email me</a>
+          </div>
+        </div>
       </div>
     </section>
 
