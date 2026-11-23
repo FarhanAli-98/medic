@@ -1,9 +1,9 @@
 (() => {
-  const projects = window.PORTFOLIO_PROJECTS || [];
+  const featured = ['quit-must', 'support-assistant', 'transaction-review'];
+  const categories = ['All', 'AI & Data', 'Mobile', 'Web', 'Backend', 'Design'];
+  const projects = [...(window.PORTFOLIO_PROJECTS || [])].sort((a, b) => priority(a) - priority(b));
   const byId = new Map(projects.map(project => [project.id, project]));
-  const featured = ['sukuk-capital', 'retaildesk', 'dispatch-ops'];
   const pageSize = 9;
-  const categories = ['All', 'Mobile', 'Web', 'Backend', 'AI & Data', 'Design'];
   const categoriesWithPortraits = new Set(['sukuk-capital', 'entertainment', 'quit-must', 'bespokely']);
   const shapes = {
     Mobile: '<rect x="10" y="3" width="12" height="26" rx="3"/><path d="M13 7h6m-5 18h4"/>',
@@ -24,6 +24,16 @@
   let category = 'All';
   let limit = pageSize;
   let lastTrigger = null;
+
+  function hasCategory(project, name) {
+    return project.category === name || (project.relatedCategories || []).includes(name);
+  }
+
+  function priority(project) {
+    const position = featured.indexOf(project.id);
+    if (position !== -1) return position;
+    return featured.length + Number(!hasCategory(project, 'AI & Data'));
+  }
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -76,8 +86,8 @@
   function renderProjects(expand = false) {
     const query = search.value.trim().toLowerCase();
     const matching = projects.filter(project => {
-      const text = [project.title, project.category, project.status, project.description, ...project.stack].join(' ').toLowerCase();
-      return (category === 'All' || category === project.category) && text.includes(query);
+      const text = [project.title, project.category, ...(project.relatedCategories || []), project.status, project.description, ...project.stack].join(' ').toLowerCase();
+      return (category === 'All' || hasCategory(project, category)) && text.includes(query);
     });
     const previous = expand ? grid.children.length : 0;
     const visible = matching.slice(0, limit);

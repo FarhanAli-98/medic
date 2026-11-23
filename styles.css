@@ -240,7 +240,7 @@ body.dialog-open .orbit > span { animation-play-state: paused !important; }
 .filter[aria-pressed="true"] { background: var(--accent); color: #081123; border-color: var(--accent); font-weight: 600; }
 .project-count { font: 400 .79rem/1.5 var(--mono); white-space: nowrap; }
 .project-grid .media { aspect-ratio: 1.95; }
-.project-grid .media--data img { object-fit: contain; object-position: center; }
+.card .media--data img { object-fit: contain; object-position: center; }
 .catalog-enter { animation: enter-copy .55s var(--ease) var(--entry-delay, 0ms) both; }
 .project-grid .card h3 { font-size: 1.34rem; }
 .project-grid .card-content > p:not(.card-meta) { font-size: .95rem; }
@@ -249,7 +249,7 @@ body.dialog-open .orbit > span { animation-play-state: paused !important; }
 .more-row:has(button:not([hidden])) { padding-top: 2rem; }
 
 .services-wrap { border-block: 1px solid var(--line); background: #0e1320; }
-.services-grid { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; gap: 0; }
+.services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; gap: 0; }
 .service { padding: 1.7rem; background: #101726; }
 .service + .service { border-left: 1px solid var(--line); }
 .service svg { width: 34px; height: 34px; color: var(--accent); }
@@ -314,6 +314,7 @@ dialog::backdrop { background: #090b0ed9; backdrop-filter: blur(5px); }
   .featured-card:first-child { grid-column: span 6; }
   .featured-card:not(:first-child) { grid-column: span 3; }
   .featured-card:not(:first-child) .media { aspect-ratio: 2.35; }
+  .featured-card:not(:first-child) .media--data { aspect-ratio: 1.78; }
   .featured-card:not(:first-child) .card-content { min-height: 174px; }
 }
 @media (max-width: 999px) {
@@ -321,6 +322,9 @@ dialog::backdrop { background: #090b0ed9; backdrop-filter: blur(5px); }
   .orbits { inset-inline-start: 43%; inset-inline-end: -4%; }
   .featured-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .featured-card .card-content { min-height: 0; }
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service:nth-child(3) { border-left: 0; }
+  .service:nth-child(n+3) { border-top: 1px solid var(--line); }
 }
 @media (max-width: 720px) {
   .shell { width: min(100% - 38px, 1350px); }
