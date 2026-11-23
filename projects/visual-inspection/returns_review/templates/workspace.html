@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Returns Review{% if case %} · {{ case.id }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='workspace.css') }}">
+</head>
+<body>
+<header class="masthead">
+  <a href="{{ url_for('queue') }}" class="brand"><span aria-hidden="true">R</span> Returns Review</a>
+  <span class="mode">{{ 'Vision enabled' if vision_enabled else 'Manual review' }}</span>
+</header>
+<main class="workspace">
+  <aside class="queue" aria-label="Return queue">
+    <div class="queue-heading"><h2>Review queue</h2><span>{{ cases|length }}</span></div>
+    <nav aria-label="Returns">
+      {% for entry in cases %}
+      <a href="{{ url_for('case_view', case_id=entry.id) }}" {% if case and case.id == entry.id %}aria-current="page"{% endif %}>
+        <span class="return-id">{{ entry.id }}</span>
+        <strong>{{ entry.item }}</strong>
+        <span class="queue-state">{{ outcomes[entry.outcome] if entry.outcome else 'Awaiting review' }}{% if entry.source == 'sample' %} · Sample{% endif %}</span>
+      </a>
+      {% endfor %}
+    </nav>
+    <details class="upload" {% if not case %}open{% endif %}>
+      <summary>Add a return</summary>
+      <form method="post" action="{{ url_for('create_return') }}" enctype="multipart/form-data">
+        <input type="hidden" name="csrf" value="{{ csrf }}">
+        <label>Item name<input name="item" maxlength="100" placeholder="e.g. Cardboard carton" required></label>
+        <p class="muted">Add one to three JPG, PNG, or WebP photos. Maximum 5 MB each.</p>
+        {% for view, label in vviews.items() %}
+        <label>{{ label }}<input type="file" name="{{ view }}" accept="image/jpeg,image/png,image/webp"></label>
+        {% endfor %}
+        <button type="submit" class="primary">Add to queue</button>
+      </form>
+    </details>
+  </aside>
+  <section class="case">
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+    <p class="notice {{ category }}" role="{{ 'alert' if category == 'error' else 'status' }}">{{ message }}</p>
+    {% endfor %}
+    {% if case %}
+    <header class="case-heading">
+      <p class="case-id">{{ case.id }}{% if case.source == 'sample' %} · Illustrative sample{% endif %}</p>
+      <h1>{{ case.item }}</h1>
+      <p class="muted">{{ views|length }} of {{ vviews|length }} recommended views attached</p>
+    </header>
+    <div class="case-grid">
+      <section class="panel photo-panel" aria-labelledby="evidence-title">
+        <h2 id="evidence-title">Photo evidence</h2>
+        <nav class="views" aria-label="Photo views">
+          {% for view, label in vviews.items() %}
+          {% if view in views %}
+          <a href="{{ url_for('case_view', case_id=case.id, view=view) }}" {% if view == selected %}aria-current="page"{% endif %}>{{ label }}</a>
+          {% else %}
+          <span>{{ label }} · Missing</span>
+          {% endif %}
+          {% endfor %}
+        </nav>
+        {% if selected %}
+        <figure>
+          <div class="photo-frame">
+            <img src="{{ url_for('case_photo', case_id=case.id, view=selected) }}" alt="{{ vviews[selected] }} view of {{ case.item }}">
+            {% if finding and finding.box %}
+            <span class="evidence-box" aria-hidden="true" style="left:{{ finding.box.x * 100 }}%;top:{{ finding.box.y * 100 }}%;width:{{ finding.box.width * 100 }}%;height:{{ finding.box.height * 100 }}%;"></span>
+            {% endif %}
+          </div>
+          <figcaption>{{ vviews[selected] }}{% if finding and finding.box %} · {{ 'Illustrative' if case.source == 'sample' else 'Suggested' }} evidence area{% endif %}</figcaption>
+        </figure>
+        {% endif %}
+      </section>
+      <div class="review-column">
+        <section class="panel findings" aria-labelledby="findings-title">
+          <h2 id="findings-title">Inspection findings</h2>
+          {% if report %}
+          <p class="tag">{{ 'Illustrative finding' if case.source == 'sample' else 'AI suggestion' }}</p>
+          <p>{{ report.summary }}</p>
+          {% if finding %}
+          <h3>{{ finding.verdict|replace('_', ' ')|capitalize }}</h3>
+          <p class="muted">{{ finding.observation }}</p>
+          {% endif %}
+          {% elif not case.outcome and vision_enabled %}
+          <p class="muted">Analyze the attached photos for visible evidence. This sends the photos to OpenAI.</p>
+          <form method="post" action="{{ url_for('analyze', case_id=case.id) }}">
+            <input type="hidden" name="csrf" value="{{ csrf }}">
+            <button class="secondary" type="submit">Analyze photos</button>
+          </form>
+          {% else %}
+          <p class="muted">This case uses manual photo review.</p>
+          {% endif %}
+        </section>
+        <section class="panel decision" aria-labelledby="review-title">
+          <h2 id="review-title">Reviewer decision</h2>
+          {% if case.outcome %}
+          <p class="tag">{{ outcomes[case.outcome] }}</p>
+          {% if case.review_note %}<p>{{ case.review_note }}</p>{% endif %}
+          <small class="muted">{{ case.reviewed_at }} UTC</small>
+          {% else %}
+          <form method="post" action="{{ url_for('review', case_id=case.id) }}">
+            <input type="hidden" name="csrf" value="{{ csrf }}">
+            <label>Outcome
+              <select name="outcome" required>
+                <option value="">Choose an outcome</option>
+                {% for key, label in outcomes.items() %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
+              </select>
+            </label>
+            <label>Notes <span class="muted">(optional)</span><textarea name="note" maxlength="500" rows="3"></textarea></label>
+            <button type="submit" class="primary">Save review</button>
+          </form>
+          {% endif %}
+        </section>
+      </div>
+    </div>
+    {% else %}
+    <header class="case-heading"><h1>Add a return</h1><p class="muted">Choose photos from the form to start a new review.</p></header>
+    {% endif %}
+  </section>
+</main>
+</body>
+</html>

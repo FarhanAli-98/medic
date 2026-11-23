@@ -37,6 +37,7 @@ Each project has setup instructions, sample data, and verification steps.
 
 | Project | Stack | What to try |
 | --- | --- | --- |
+| [**Visual Inspection for Returns**](projects/visual-inspection/) | Python, Flask, SQLite, optional OpenAI vision | Inspect the sample parcel, upload photos, and record a reviewer decision. |
 | [**Grant Desk**](projects/grant-cms/) | Node.js, JavaScript, HTML/CSS | Import a legacy grant, review a draft, publish it, and follow the old URL to the new page. |
 | [**Crescent Ledger**](projects/investment-wallet/) | Flutter, Dart | Add demo cash, allocate it across holdings, and reconcile balances against activity. |
 | [**Giving Ops**](projects/giving-ops/) | TypeScript, Node.js, SQLite | Run recurring donation jobs, simulate a gateway failure, and rerun the scheduler without a duplicate charge. |
@@ -173,13 +174,13 @@ A searchable synthetic handbook, a browser prototype with expandable citations, 
 
 #### Visual Inspection for Returns
 
-**Design prototype · Synthetic data**
+**Runnable demo · Illustrative sample**
 
-Returns reviewers often get several photos per item with inconsistent lighting and coverage. This proposal explores whether a review tool could identify visible damage and save reviewers time by pointing them to the image and region that merit attention.
+Review return photos in a local workspace, check coverage, and record a decision. The optional vision adapter suggests visible findings and approximate evidence areas for uploaded photos.
 
 ![Returns inspection prototype with a photographic damaged parcel, outlined corner damage, and a pending review decision.](docs/research/prototypes/visual-inspection.webp)
 
-[Full-size prototype](docs/research/prototypes/visual-inspection.webp) · [Sample data](docs/research/prototypes/visual-inspection.json) · [Project brief](docs/research/ai/visual-inspection.md)
+[Source and setup](projects/visual-inspection/) · [Full-size design preview](docs/research/prototypes/visual-inspection.webp) · [Sample data](docs/research/prototypes/visual-inspection.json) · [Project brief](docs/research/ai/visual-inspection.md)
 
 <details>
 <summary>Read the full project brief</summary>

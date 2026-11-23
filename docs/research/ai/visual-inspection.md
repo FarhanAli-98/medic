@@ -10,6 +10,8 @@ Reviewer inspects a staged damaged parcel and confirms the observation.
 
 [Full-size prototype](../prototypes/visual-inspection.webp) · [Sample data](../prototypes/visual-inspection.json) · [Workflow diagram](../figures/visual-inspection.png)
 
+[Run the local review workspace and inspect its source](../../../projects/visual-inspection/).
+
 ## Data and provenance
 
 Start with an original photo set of staged returns using unbranded sample items. Photograph intact items, crushed boxes, broken seals, and cosmetic scratches under varied lighting and camera angles. Record which item, session, and capture conditions produced each image. Two reviewers would label defect type and visible location independently. Keep disagreements as examples of uncertainty and remove shipment labels or identifying details before indexing images.
