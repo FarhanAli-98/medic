@@ -1,0 +1,45 @@
+{
+  "project": "Incident Triage Copilot",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "On-call reviewer links deployment and telemetry while investigating checkout latency.",
+  "preview_alt": "Incident desk prototype with a checkout latency chart and a timestamped deployment, alert, and review timeline.",
+  "sample_data": {
+    "incident": "INC-2043",
+    "target_p95_ms": 650,
+    "p95_ms": [
+      190,
+      205,
+      205,
+      233,
+      285,
+      711,
+      848,
+      804,
+      716,
+      459
+    ],
+    "timeline": [
+      {
+        "time": "14:02",
+        "type": "Deploy",
+        "evidence": "checkout-api 2.9.4"
+      },
+      {
+        "time": "14:07",
+        "type": "Alert",
+        "evidence": "P95 latency crosses 650 ms"
+      },
+      {
+        "time": "14:09",
+        "type": "Metric",
+        "evidence": "Payment wait time rises"
+      },
+      {
+        "time": "14:14",
+        "type": "Note",
+        "evidence": "Engineer checks dependency"
+      }
+    ]
+  }
+}

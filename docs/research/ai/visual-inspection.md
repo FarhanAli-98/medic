@@ -1,10 +1,14 @@
 # Visual Inspection for Returns
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Returns reviewers often get several photos per item with inconsistent lighting and coverage. This proposal explores whether a review tool could identify visible damage and save reviewers time by pointing them to the image and region that merit attention.
 
-![Proposed Visual Inspection for Returns workflow from return intake through image checks, defect assessment to review queue](../figures/visual-inspection.png)
+![Returns inspection prototype with a photographic damaged parcel, outlined corner damage, and a pending review decision.](../prototypes/visual-inspection.webp)
+
+Reviewer inspects a staged damaged parcel and confirms the observation.
+
+[Full-size prototype](../prototypes/visual-inspection.webp) · [Sample data](../prototypes/visual-inspection.json) · [Workflow diagram](../figures/visual-inspection.png)
 
 ## Data and provenance
 

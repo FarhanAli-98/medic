@@ -1,10 +1,14 @@
 # Nearby Offers Recommender
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A neighborhood offers app needs to surface promotions people can actually use. The first version would rank active offers within a chosen radius and balance proximity with relevance, including for someone who has just opened the app.
 
-![Proposed Nearby Offers Recommender workflow from eligible offers through contextual rank, future sessions to offer results](../figures/nearby-offers.png)
+![Offers workspace with three ranked sample deals, distance tags, and a fictional neighborhood map.](../prototypes/nearby-offers.webp)
+
+Three eligible offers are ranked for a fictional visitor with a two-kilometer radius.
+
+[Full-size prototype](../prototypes/nearby-offers.webp) · [Sample data](../prototypes/nearby-offers.json) · [Workflow diagram](../figures/nearby-offers.png)
 
 ## Data and provenance
 

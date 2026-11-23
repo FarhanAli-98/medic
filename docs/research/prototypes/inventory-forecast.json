@@ -1,0 +1,43 @@
+{
+  "project": "Inventory Demand Forecasting",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Planner compares a synthetic demand range with stock, inbound orders, and buffer stock.",
+  "preview_alt": "Inventory prototype with a seven-day demand band and a replenishment calculation connected to stock and inbound units.",
+  "sample_data": {
+    "sku": "TMB-24",
+    "point_forecasts": [
+      14,
+      16,
+      18,
+      17,
+      20,
+      23,
+      18
+    ],
+    "lower_forecasts": [
+      11,
+      12,
+      13,
+      13,
+      15,
+      18,
+      14
+    ],
+    "upper_forecasts": [
+      17,
+      20,
+      23,
+      22,
+      26,
+      29,
+      24
+    ],
+    "inventory": {
+      "on_hand": 64,
+      "inbound": 48,
+      "buffer": 42,
+      "recommended_order": 56
+    }
+  }
+}

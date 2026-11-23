@@ -1,0 +1,19 @@
+{
+  "project": "On-Device Content Classification",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "An offline example defers a headline for review when no category exceeds the confidence threshold.",
+  "preview_alt": "Edge classifier prototype with an offline phone view, four category scores, and a review threshold.",
+  "sample_data": {
+    "headline": "Solar-powered sensors track river health",
+    "connection": "offline",
+    "class_probabilities": {
+      "Science & tech": 0.79,
+      "World": 0.12,
+      "Business": 0.06,
+      "Sports": 0.03
+    },
+    "decision_threshold": 0.82,
+    "output": "review"
+  }
+}

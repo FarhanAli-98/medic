@@ -1,10 +1,14 @@
 # Policy and Procedure Q&A
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 An internal help desk loses time answering routine questions about travel approvals, purchase limits, and reimbursements. A policy assistant would point staff to the relevant rule and its effective date, then route exceptions to the policy owner.
 
-![Proposed Policy and Procedure Q&A workflow from source library through permission filter, search and rank to answer with sources](../figures/policy-qa.png)
+![Policy Desk prototype with a travel-policy question, a suggested answer, and cited handbook passages.](../prototypes/policy-qa.webp)
+
+Employee asks about an over-limit hotel booking and sees two current source passages.
+
+[Full-size prototype](../prototypes/policy-qa.webp) · [Sample data](../prototypes/policy-qa.json) · [Workflow diagram](../figures/policy-qa.png)
 
 ## Data and provenance
 

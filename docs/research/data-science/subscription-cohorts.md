@@ -1,10 +1,14 @@
 # Subscription Cohort and Revenue Analysis
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Determine whether a subscription business should prioritize onboarding improvements or failed-payment recovery. The first analysis would locate where paying subscribers leave and how those losses contribute to changes in recurring revenue.
 
-![Proposed Subscription Cohort and Revenue Analysis workflow from billing records through start cohorts, reconcile totals to retention view](../figures/subscription-cohorts.png)
+![Revenue prototype with a six-cohort retention heatmap and a reconciled monthly recurring revenue bridge.](../prototypes/subscription-cohorts.webp)
+
+Finance reviewer inspects tenure-aligned retention and reconciles monthly recurring revenue.
+
+[Full-size prototype](../prototypes/subscription-cohorts.webp) · [Sample data](../prototypes/subscription-cohorts.json) · [Workflow diagram](../figures/subscription-cohorts.png)
 
 ## Data and measures
 

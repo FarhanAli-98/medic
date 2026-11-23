@@ -1,0 +1,19 @@
+{
+  "project": "Visual Inspection for Returns",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Reviewer inspects a staged damaged parcel and confirms the observation.",
+  "preview_alt": "Returns inspection prototype with a photographic damaged parcel, outlined corner damage, and a pending review decision.",
+  "sample_data": {
+    "case_id": "RT-1842",
+    "item": "Unbranded cardboard carton",
+    "views": [
+      "front-right",
+      "top",
+      "back"
+    ],
+    "evidence_image": "Illustrative generated parcel photo",
+    "observation": "Corner compression",
+    "decision": null
+  }
+}

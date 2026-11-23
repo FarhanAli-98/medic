@@ -1,0 +1,37 @@
+{
+  "project": "Nearby Offers Recommender",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Three eligible offers are ranked for a fictional visitor with a two-kilometer radius.",
+  "preview_alt": "Offers workspace with three ranked sample deals, distance tags, and a fictional neighborhood map.",
+  "sample_data": {
+    "radius_km": 2,
+    "open_only": true,
+    "eligible_offers": [
+      {
+        "label": "Juniper Coffee",
+        "type": "Cafés",
+        "offer": "20% off coffee and pastries",
+        "distance_km": 0.4,
+        "score": 0.94,
+        "explanation": "Café preference · open now"
+      },
+      {
+        "label": "Market Hill Books",
+        "type": "Shopping",
+        "offer": "Buy two books, save 15%",
+        "distance_km": 0.7,
+        "score": 0.88,
+        "explanation": "Shopping preference · local pickup"
+      },
+      {
+        "label": "Northgate Cinema",
+        "type": "Experiences",
+        "offer": "Two seats for $18",
+        "distance_km": 1.2,
+        "score": 0.82,
+        "explanation": "Available tonight · under 2 km"
+      }
+    ]
+  }
+}

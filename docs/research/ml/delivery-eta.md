@@ -1,10 +1,14 @@
 # Delivery ETA with Prediction Intervals
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A dispatch team needs to know when a delivery is likely to arrive and how much room to leave for delays. This project would estimate delivery time at assignment and show an interval that helps operators decide when to follow up.
 
-![Proposed Delivery ETA with Prediction Intervals workflow from dispatch snapshot through point and interval, future routes to operations view](../figures/delivery-eta.png)
+![Dispatch prototype with a fictional route map, a point ETA, and arrival intervals for three sample orders.](../prototypes/delivery-eta.webp)
+
+Dispatcher checks an illustrative arrival window before following up on an active delivery.
+
+[Full-size prototype](../prototypes/delivery-eta.webp) · [Sample data](../prototypes/delivery-eta.json) · [Workflow diagram](../figures/delivery-eta.png)
 
 ## Data and provenance
 

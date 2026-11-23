@@ -1,10 +1,14 @@
 # Inventory Demand Forecasting
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A small retailer needs a short list of products to reorder before the next delivery. This project would produce seven-day sales forecasts and show where uncertainty can change a replenishment decision.
 
-![Proposed Inventory Demand Forecasting workflow from store and sku through sales estimates, rolling backtest to reorder options](../figures/inventory-forecast.png)
+![Inventory prototype with a seven-day demand band and a replenishment calculation connected to stock and inbound units.](../prototypes/inventory-forecast.webp)
+
+Planner compares a synthetic demand range with stock, inbound orders, and buffer stock.
+
+[Full-size prototype](../prototypes/inventory-forecast.webp) · [Sample data](../prototypes/inventory-forecast.json) · [Workflow diagram](../figures/inventory-forecast.png)
 
 ## Data and provenance
 

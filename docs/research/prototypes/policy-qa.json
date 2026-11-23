@@ -1,0 +1,29 @@
+{
+  "project": "Policy and Procedure Q&A",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Employee asks about an over-limit hotel booking and sees two current source passages.",
+  "preview_alt": "Policy Desk prototype with a travel-policy question, a suggested answer, and cited handbook passages.",
+  "sample_data": {
+    "question": "Can I book a hotel above $180 for a client visit?",
+    "suggested_answer": "Request manager approval before booking. The $180 nightly limit applies before taxes. If comparable rooms are unavailable, attach two quotes and use the exception form.",
+    "sources": [
+      {
+        "title": "Travel & Expenses",
+        "section": "§ 4.2 Lodging",
+        "version": "2026.3",
+        "effective": "15 Nov 2026",
+        "group": "General staff",
+        "passage": "Standard lodging up to USD 180 per night before tax. Requests above the limit need manager approval and at least two comparable quotes."
+      },
+      {
+        "title": "Approval Routing",
+        "section": "§ 2.1 Exceptions",
+        "version": "2026.1",
+        "effective": "01 Sep 2026",
+        "group": "General staff",
+        "passage": "Route travel exceptions to the employee’s manager through the travel exception form."
+      }
+    ]
+  }
+}

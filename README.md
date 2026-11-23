@@ -136,17 +136,19 @@ Access updates would require explicit confirmation. The audit panel would record
 
 ## AI, ML, and data science proposals
 
-Each proposed project includes a workflow diagram, a data plan, and an evaluation plan.
+Explore 12 interface prototypes for proposed AI, machine learning, and data science projects. The screens use synthetic sample data. Each project also includes its workflow, data plan, and evaluation plan.
 
 ### AI systems
 
 #### Policy and Procedure Q&A
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 An internal help desk loses time answering routine questions about travel approvals, purchase limits, and reimbursements. A policy assistant would point staff to the relevant rule and its effective date, then route exceptions to the policy owner.
 
-![Proposed Policy and Procedure Q&A workflow from source library through permission filter, search and rank to answer with sources](docs/research/figures/policy-qa.png)
+![Policy Desk prototype with a travel-policy question, a suggested answer, and cited handbook passages.](docs/research/prototypes/policy-qa.webp)
+
+[Full-size prototype](docs/research/prototypes/policy-qa.webp) · [Sample data](docs/research/prototypes/policy-qa.json) · [Project brief](docs/research/ai/policy-qa.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -171,11 +173,13 @@ A searchable synthetic handbook, a browser prototype with expandable citations, 
 
 #### Visual Inspection for Returns
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Returns reviewers often get several photos per item with inconsistent lighting and coverage. This proposal explores whether a review tool could identify visible damage and save reviewers time by pointing them to the image and region that merit attention.
 
-![Proposed Visual Inspection for Returns workflow from return intake through image checks, defect assessment to review queue](docs/research/figures/visual-inspection.png)
+![Returns inspection prototype with a photographic damaged parcel, outlined corner damage, and a pending review decision.](docs/research/prototypes/visual-inspection.webp)
+
+[Full-size prototype](docs/research/prototypes/visual-inspection.webp) · [Sample data](docs/research/prototypes/visual-inspection.json) · [Project brief](docs/research/ai/visual-inspection.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -200,11 +204,13 @@ A local review prototype with a labeled sample batch, a side-by-side photo and e
 
 #### Incident Triage Copilot
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 When checkout latency spikes during an on-call shift, responders need to identify which services and customers are affected. This copilot would assemble the evidence into a timeline and suggest where the responder should start looking.
 
-![Proposed Incident Triage Copilot workflow from service alert through evidence timeline, triage brief to engineer review](docs/research/figures/incident-triage.png)
+![Incident desk prototype with a checkout latency chart and a timestamped deployment, alert, and review timeline.](docs/research/prototypes/incident-triage.webp)
+
+[Full-size prototype](docs/research/prototypes/incident-triage.webp) · [Sample data](docs/research/prototypes/incident-triage.json) · [Project brief](docs/research/ai/incident-triage.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -229,11 +235,13 @@ A deterministic replay of scripted incidents, a browser view linking each triage
 
 #### Multilingual Voice Intake
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 People opening a support request by voice may switch languages mid-sentence or spell a reference number over a noisy connection. This proposal explores turning those recordings into editable ticket drafts while preserving the original request and surfacing uncertain details.
 
-![Proposed Multilingual Voice Intake workflow from consent and audio through transcribe, draft a request to verify and submit](docs/research/figures/voice-intake.png)
+![Voice intake interface with a sample waveform, English and Urdu transcript segments, and an editable ticket draft.](docs/research/prototypes/voice-intake.webp)
+
+[Full-size prototype](docs/research/prototypes/voice-intake.webp) · [Sample data](docs/research/prototypes/voice-intake.json) · [Project brief](docs/research/ai/voice-intake.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -260,11 +268,13 @@ A local intake prototype with staged recordings, timestamped transcript and draf
 
 #### Delivery ETA with Prediction Intervals
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A dispatch team needs to know when a delivery is likely to arrive and how much room to leave for delays. This project would estimate delivery time at assignment and show an interval that helps operators decide when to follow up.
 
-![Proposed Delivery ETA with Prediction Intervals workflow from dispatch snapshot through point and interval, future routes to operations view](docs/research/figures/delivery-eta.png)
+![Dispatch prototype with a fictional route map, a point ETA, and arrival intervals for three sample orders.](docs/research/prototypes/delivery-eta.webp)
+
+[Full-size prototype](docs/research/prototypes/delivery-eta.webp) · [Sample data](docs/research/prototypes/delivery-eta.json) · [Project brief](docs/research/ml/delivery-eta.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -289,11 +299,13 @@ A versioned synthetic dataset, a reproducible evaluation, and a small dispatch v
 
 #### Nearby Offers Recommender
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A neighborhood offers app needs to surface promotions people can actually use. The first version would rank active offers within a chosen radius and balance proximity with relevance, including for someone who has just opened the app.
 
-![Proposed Nearby Offers Recommender workflow from eligible offers through contextual rank, future sessions to offer results](docs/research/figures/nearby-offers.png)
+![Offers workspace with three ranked sample deals, distance tags, and a fictional neighborhood map.](docs/research/prototypes/nearby-offers.webp)
+
+[Full-size prototype](docs/research/prototypes/nearby-offers.webp) · [Sample data](docs/research/prototypes/nearby-offers.json) · [Project brief](docs/research/ml/nearby-offers.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -318,11 +330,13 @@ A generated offer catalog, a reproducible comparison against the distance baseli
 
 #### Inventory Demand Forecasting
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A small retailer needs a short list of products to reorder before the next delivery. This project would produce seven-day sales forecasts and show where uncertainty can change a replenishment decision.
 
-![Proposed Inventory Demand Forecasting workflow from store and sku through sales estimates, rolling backtest to reorder options](docs/research/figures/inventory-forecast.png)
+![Inventory prototype with a seven-day demand band and a replenishment calculation connected to stock and inbound units.](docs/research/prototypes/inventory-forecast.webp)
+
+[Full-size prototype](docs/research/prototypes/inventory-forecast.webp) · [Sample data](docs/research/prototypes/inventory-forecast.json) · [Project brief](docs/research/ml/inventory-forecast.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -347,11 +361,13 @@ A repeatable backtest, a forecast table with error and coverage by item segment,
 
 #### On-Device Content Classification
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A mobile reading app needs a topic label for short English articles so readers can filter saved items offline. The first version would classify a title and short description as world news, sports, business, or science and technology, with an option to leave uncertain items unclassified.
 
-![Proposed On-Device Content Classification workflow from labeled article text through compact model, device benchmark to local result](docs/research/figures/edge-classification.png)
+![Edge classifier prototype with an offline phone view, four category scores, and a review threshold.](docs/research/prototypes/edge-classification.webp)
+
+[Full-size prototype](docs/research/prototypes/edge-classification.webp) · [Sample data](docs/research/prototypes/edge-classification.json) · [Project brief](docs/research/ml/edge-classification.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -378,11 +394,13 @@ An offline evaluation report, a device benchmark plan, and a prototype screen sh
 
 #### Feature Rollout Experiment
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Evaluate whether an optional setup checklist helps new accounts complete their first meaningful action within seven days. The decision is whether to release the checklist broadly, revise it, or leave the current setup flow in place.
 
-![Proposed Feature Rollout Experiment workflow from randomization through exposure events, outcome metrics to release decision](docs/research/figures/rollout-experiment.png)
+![Rollout analysis with control and treatment activation bars, an uncertainty estimate, and release guardrails.](docs/research/prototypes/rollout-experiment.webp)
+
+[Full-size prototype](docs/research/prototypes/rollout-experiment.webp) · [Sample data](docs/research/prototypes/rollout-experiment.json) · [Project brief](docs/research/data-science/rollout-experiment.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -403,11 +421,13 @@ The first deliverable would be a one-page launch memo with the activation estima
 
 #### Subscription Cohort and Revenue Analysis
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Determine whether a subscription business should prioritize onboarding improvements or failed-payment recovery. The first analysis would locate where paying subscribers leave and how those losses contribute to changes in recurring revenue.
 
-![Proposed Subscription Cohort and Revenue Analysis workflow from billing records through start cohorts, reconcile totals to retention view](docs/research/figures/subscription-cohorts.png)
+![Revenue prototype with a six-cohort retention heatmap and a reconciled monthly recurring revenue bridge.](docs/research/prototypes/subscription-cohorts.webp)
+
+[Full-size prototype](docs/research/prototypes/subscription-cohorts.webp) · [Sample data](docs/research/prototypes/subscription-cohorts.json) · [Project brief](docs/research/data-science/subscription-cohorts.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -428,11 +448,13 @@ The first deliverable would be an annotated cohort table and revenue bridge with
 
 #### Transit Accessibility Analysis
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Compare an earlier first-bus departure with a timed transfer for people traveling to primary care clinics. The decision is which timetable change warrants a pilot in a single corridor.
 
-![Proposed Transit Accessibility Analysis workflow from public schedules through travel network, reachable services to planning view](docs/research/figures/mobility-access.png)
+![Planning prototype with a fictional transit coverage map and three timetable scenarios for clinic access.](docs/research/prototypes/mobility-access.webp)
+
+[Full-size prototype](docs/research/prototypes/mobility-access.webp) · [Sample data](docs/research/prototypes/mobility-access.json) · [Project brief](docs/research/data-science/mobility-access.md)
 
 <details>
 <summary>Read the full project brief</summary>
@@ -453,11 +475,13 @@ The first deliverable would be a paired accessibility map and a corridor-level t
 
 #### Marketplace Liquidity Analysis
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Identify whether a local services marketplace should recruit more providers, change how it matches requests, or improve booking follow-through. The proposed study focuses on one service category across three zones and looks for the point where viable requests stop converting.
 
-![Proposed Marketplace Liquidity Analysis workflow from market-hour panel through match funnel, booking outcomes to operations view](docs/research/figures/marketplace-liquidity.png)
+![Marketplace workspace with a request funnel and completed booking rates for four fictional zones.](docs/research/prototypes/marketplace-liquidity.webp)
+
+[Full-size prototype](docs/research/prototypes/marketplace-liquidity.webp) · [Sample data](docs/research/prototypes/marketplace-liquidity.json) · [Project brief](docs/research/data-science/marketplace-liquidity.md)
 
 <details>
 <summary>Read the full project brief</summary>

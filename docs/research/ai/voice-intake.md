@@ -1,10 +1,14 @@
 # Multilingual Voice Intake
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 People opening a support request by voice may switch languages mid-sentence or spell a reference number over a noisy connection. This proposal explores turning those recordings into editable ticket drafts while preserving the original request and surfacing uncertain details.
 
-![Proposed Multilingual Voice Intake workflow from consent and audio through transcribe, draft a request to verify and submit](../figures/voice-intake.png)
+![Voice intake interface with a sample waveform, English and Urdu transcript segments, and an editable ticket draft.](../prototypes/voice-intake.webp)
+
+A bilingual sample call becomes an editable delivery support ticket.
+
+[Full-size prototype](../prototypes/voice-intake.webp) · [Sample data](../prototypes/voice-intake.json) · [Workflow diagram](../figures/voice-intake.png)
 
 ## Data and provenance
 

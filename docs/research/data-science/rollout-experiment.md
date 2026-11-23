@@ -1,10 +1,14 @@
 # Feature Rollout Experiment
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Evaluate whether an optional setup checklist helps new accounts complete their first meaningful action within seven days. The decision is whether to release the checklist broadly, revise it, or leave the current setup flow in place.
 
-![Proposed Feature Rollout Experiment workflow from randomization through exposure events, outcome metrics to release decision](../figures/rollout-experiment.png)
+![Rollout analysis with control and treatment activation bars, an uncertainty estimate, and release guardrails.](../prototypes/rollout-experiment.webp)
+
+A fictional launch review compares activation rates and safety checks before a broader rollout.
+
+[Full-size prototype](../prototypes/rollout-experiment.webp) · [Sample data](../prototypes/rollout-experiment.json) · [Workflow diagram](../figures/rollout-experiment.png)
 
 ## Data and design
 

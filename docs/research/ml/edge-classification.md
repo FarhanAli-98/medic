@@ -1,10 +1,14 @@
 # On-Device Content Classification
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 A mobile reading app needs a topic label for short English articles so readers can filter saved items offline. The first version would classify a title and short description as world news, sports, business, or science and technology, with an option to leave uncertain items unclassified.
 
-![Proposed On-Device Content Classification workflow from labeled article text through compact model, device benchmark to local result](../figures/edge-classification.png)
+![Edge classifier prototype with an offline phone view, four category scores, and a review threshold.](../prototypes/edge-classification.webp)
+
+An offline example defers a headline for review when no category exceeds the confidence threshold.
+
+[Full-size prototype](../prototypes/edge-classification.webp) · [Sample data](../prototypes/edge-classification.json) · [Workflow diagram](../figures/edge-classification.png)
 
 ## Data and provenance
 

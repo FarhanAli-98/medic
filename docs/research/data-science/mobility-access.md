@@ -1,10 +1,14 @@
 # Transit Accessibility Analysis
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Compare an earlier first-bus departure with a timed transfer for people traveling to primary care clinics. The decision is which timetable change warrants a pilot in a single corridor.
 
-![Proposed Transit Accessibility Analysis workflow from public schedules through travel network, reachable services to planning view](../figures/mobility-access.png)
+![Planning prototype with a fictional transit coverage map and three timetable scenarios for clinic access.](../prototypes/mobility-access.webp)
+
+Planner compares change options against a synthetic baseline on a fictional transit corridor.
+
+[Full-size prototype](../prototypes/mobility-access.webp) · [Sample data](../prototypes/mobility-access.json) · [Workflow diagram](../figures/mobility-access.png)
 
 ## Data and measures
 

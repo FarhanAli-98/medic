@@ -1,0 +1,41 @@
+{
+  "project": "Marketplace Liquidity Analysis",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Marketplace operator checks the largest funnel drop and contrasts four fictional zones.",
+  "preview_alt": "Marketplace workspace with a request funnel and completed booking rates for four fictional zones.",
+  "sample_data": {
+    "funnel_counts": {
+      "Requests": 560,
+      "Provider eligible": 438,
+      "Provider responded": 317,
+      "Booking complete": 246
+    },
+    "zones": [
+      {
+        "zone": "Northgate",
+        "requests": 95,
+        "booked": 60,
+        "conversion": "63.2%"
+      },
+      {
+        "zone": "Market Hill",
+        "requests": 191,
+        "booked": 91,
+        "conversion": "47.6%"
+      },
+      {
+        "zone": "Southbank",
+        "requests": 144,
+        "booked": 49,
+        "conversion": "34.0%"
+      },
+      {
+        "zone": "Brookline",
+        "requests": 130,
+        "booked": 46,
+        "conversion": "35.4%"
+      }
+    ]
+  }
+}

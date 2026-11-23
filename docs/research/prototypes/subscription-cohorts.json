@@ -1,0 +1,58 @@
+{
+  "project": "Subscription Cohort and Revenue Analysis",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Finance reviewer inspects tenure-aligned retention and reconciles monthly recurring revenue.",
+  "preview_alt": "Revenue prototype with a six-cohort retention heatmap and a reconciled monthly recurring revenue bridge.",
+  "sample_data": {
+    "retention_percent_by_cohort": {
+      "May": [
+        100,
+        83,
+        76,
+        71,
+        68,
+        64
+      ],
+      "Jun": [
+        100,
+        86,
+        80,
+        75,
+        72,
+        67
+      ],
+      "Jul": [
+        100,
+        84,
+        77,
+        74,
+        69
+      ],
+      "Aug": [
+        100,
+        89,
+        81,
+        77
+      ],
+      "Sep": [
+        100,
+        87,
+        81
+      ],
+      "Oct": [
+        100,
+        91
+      ]
+    },
+    "currency": "USD",
+    "revenue_bridge": {
+      "opening": 78400,
+      "new": 12800,
+      "expansion": 6200,
+      "contraction": -3400,
+      "churn": -5700,
+      "closing": 88300
+    }
+  }
+}

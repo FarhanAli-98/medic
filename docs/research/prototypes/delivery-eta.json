@@ -1,0 +1,57 @@
+{
+  "project": "Delivery ETA with Prediction Intervals",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Dispatcher checks an illustrative arrival window before following up on an active delivery.",
+  "preview_alt": "Dispatch prototype with a fictional route map, a point ETA, and arrival intervals for three sample orders.",
+  "sample_data": {
+    "interval_target": 0.8,
+    "map_coordinates": "Normalized fictional positions",
+    "route": [
+      [
+        0.2,
+        0.58
+      ],
+      [
+        0.31,
+        0.58
+      ],
+      [
+        0.32,
+        0.42
+      ],
+      [
+        0.51,
+        0.39
+      ],
+      [
+        0.59,
+        0.29
+      ],
+      [
+        0.71,
+        0.32
+      ]
+    ],
+    "deliveries": [
+      {
+        "id": "DL-604",
+        "zone": "Market Hill",
+        "point_eta": "16:42",
+        "arrival_window": "16:36–16:51"
+      },
+      {
+        "id": "DL-608",
+        "zone": "Southbank",
+        "point_eta": "16:54",
+        "arrival_window": "16:48–17:06"
+      },
+      {
+        "id": "DL-612",
+        "zone": "Brookline",
+        "point_eta": "17:05",
+        "arrival_window": "16:56–17:19"
+      }
+    ]
+  }
+}

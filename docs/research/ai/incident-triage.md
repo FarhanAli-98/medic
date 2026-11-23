@@ -1,10 +1,14 @@
 # Incident Triage Copilot
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 When checkout latency spikes during an on-call shift, responders need to identify which services and customers are affected. This copilot would assemble the evidence into a timeline and suggest where the responder should start looking.
 
-![Proposed Incident Triage Copilot workflow from service alert through evidence timeline, triage brief to engineer review](../figures/incident-triage.png)
+![Incident desk prototype with a checkout latency chart and a timestamped deployment, alert, and review timeline.](../prototypes/incident-triage.webp)
+
+On-call reviewer links deployment and telemetry while investigating checkout latency.
+
+[Full-size prototype](../prototypes/incident-triage.webp) · [Sample data](../prototypes/incident-triage.json) · [Workflow diagram](../figures/incident-triage.png)
 
 ## Data and provenance
 

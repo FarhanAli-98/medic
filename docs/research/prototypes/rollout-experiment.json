@@ -1,0 +1,27 @@
+{
+  "project": "Feature Rollout Experiment",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "A fictional launch review compares activation rates and safety checks before a broader rollout.",
+  "preview_alt": "Rollout analysis with control and treatment activation bars, an uncertainty estimate, and release guardrails.",
+  "sample_data": {
+    "assigned_per_group": 1280,
+    "groups": {
+      "control": {
+        "activated": 442,
+        "setup_errors": 21,
+        "abandoned": 108
+      },
+      "checklist": {
+        "activated": 499,
+        "setup_errors": 23,
+        "abandoned": 100
+      }
+    },
+    "lift": 0.04453124999999997,
+    "approximate_unpooled_95_percent_interval": [
+      0.0072164800621928385,
+      0.0818460199378071
+    ]
+  }
+}

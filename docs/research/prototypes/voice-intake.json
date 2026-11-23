@@ -1,0 +1,35 @@
+{
+  "project": "Multilingual Voice Intake",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "A bilingual sample call becomes an editable delivery support ticket.",
+  "preview_alt": "Voice intake interface with a sample waveform, English and Urdu transcript segments, and an editable ticket draft.",
+  "sample_data": {
+    "clip_id": "CL-0918",
+    "duration_seconds": 44,
+    "consent_recorded": true,
+    "segments": [
+      {
+        "timestamp": "00:04",
+        "language": "English",
+        "illustrative_english_text": "Hi, I’m calling about a delivery that didn’t arrive."
+      },
+      {
+        "timestamp": "00:12",
+        "language": "Urdu",
+        "illustrative_english_text": "Customer asks whether the delivery can be rescheduled."
+      },
+      {
+        "timestamp": "00:26",
+        "language": "English",
+        "illustrative_english_text": "The reference ends in nine, two, zero."
+      }
+    ],
+    "draft": {
+      "category": "Missing order",
+      "action": "Reschedule delivery",
+      "reference_suffix": "920",
+      "review_status": "confirm reference"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "project": "Transit Accessibility Analysis",
+  "status": "Design prototype",
+  "data_provenance": "Synthetic demonstration records. These values describe the illustrated scenario.",
+  "scenario": "Planner compares change options against a synthetic baseline on a fictional transit corridor.",
+  "preview_alt": "Planning prototype with a fictional transit coverage map and three timetable scenarios for clinic access.",
+  "sample_data": {
+    "threshold_minutes": 45,
+    "departure_local": "07:00",
+    "district": "Fictional corridor",
+    "fictional_stop_positions": [
+      [
+        0.19,
+        0.58
+      ],
+      [
+        0.32,
+        0.6
+      ],
+      [
+        0.51,
+        0.39
+      ],
+      [
+        0.62,
+        0.38
+      ],
+      [
+        0.68,
+        0.55
+      ]
+    ],
+    "scenarios": [
+      {
+        "name": "Current timetable",
+        "residents_within_45_min": 4820
+      },
+      {
+        "name": "Earlier first trip",
+        "residents_within_45_min": 5370
+      },
+      {
+        "name": "Timed transfer",
+        "residents_within_45_min": 5840
+      }
+    ]
+  }
+}

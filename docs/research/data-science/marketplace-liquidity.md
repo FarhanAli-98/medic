@@ -1,10 +1,14 @@
 # Marketplace Liquidity Analysis
 
-**Project brief · Proposed**
+**Design prototype · Synthetic data**
 
 Identify whether a local services marketplace should recruit more providers, change how it matches requests, or improve booking follow-through. The proposed study focuses on one service category across three zones and looks for the point where viable requests stop converting.
 
-![Proposed Marketplace Liquidity Analysis workflow from market-hour panel through match funnel, booking outcomes to operations view](../figures/marketplace-liquidity.png)
+![Marketplace workspace with a request funnel and completed booking rates for four fictional zones.](../prototypes/marketplace-liquidity.webp)
+
+Marketplace operator checks the largest funnel drop and contrasts four fictional zones.
+
+[Full-size prototype](../prototypes/marketplace-liquidity.webp) · [Sample data](../prototypes/marketplace-liquidity.json) · [Workflow diagram](../figures/marketplace-liquidity.png)
 
 ## Data and measures
 
