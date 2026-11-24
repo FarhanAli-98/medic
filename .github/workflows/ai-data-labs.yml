@@ -1,0 +1,40 @@
+name: AI data lab tests
+on:
+  push:
+    paths:
+      - 'projects/delivery-eta/**'
+      - 'projects/inventory-forecast/**'
+      - 'projects/nearby-offers/**'
+      - 'projects/ai-lab-requirements.txt'
+      - '.github/workflows/ai-data-labs.yml'
+  pull_request:
+    paths:
+      - 'projects/delivery-eta/**'
+      - 'projects/inventory-forecast/**'
+      - 'projects/nearby-offers/**'
+      - 'projects/ai-lab-requirements.txt'
+      - '.github/workflows/ai-data-labs.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - dir: delivery-eta
+            entry: eta.py
+          - dir: inventory-forecast
+            entry: backtest.py
+          - dir: nearby-offers
+            entry: evaluate.py
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r projects/ai-lab-requirements.txt
+      - working-directory: projects/${{ matrix.dir }}
+        run: |
+          python -m unittest discover -v
+          python ${{ matrix.entry }}
